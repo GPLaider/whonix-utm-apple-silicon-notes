@@ -1,0 +1,14 @@
+# Smoke results example
+
+timestamp_utc=2026-06-23T13:11:51Z
+scope=one local Apple Silicon + UTM test pair
+gateway=headless start observed
+workstation=LXQt start observed
+workstation_default_route=10.152.152.10
+workstation_dns=10.152.152.10,fd19:c33d:88bc::10
+systemcheck_virtualizer_gateway_rc=0
+systemcheck_virtualizer_workstation_rc=0
+tor_egress_smoke=IsTor true observed; exit IP omitted from public example
+dynamic_resolution_helper=present and running
+dynamic_resolution_live_transition=not fully measured
+note=this example is sanitized review material, not a compatibility guarantee

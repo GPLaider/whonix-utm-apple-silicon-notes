@@ -1,0 +1,49 @@
+{
+  "name": "Whonix UTM Apple Silicon developers-only prototype notes",
+  "version": "example-review-metadata",
+  "whonix_version": "example-placeholder",
+  "architecture": "arm64",
+  "target": "utm",
+  "host_os": "Darwin arm64",
+  "utm_version": "example-placeholder",
+  "qemu_host_version": "example-placeholder",
+  "builder_os": "example-placeholder",
+  "official_release": false,
+  "supported_by_whonix": false,
+  "not_endorsed_by_whonix": true,
+  "developers_only": true,
+  "prototype": true,
+  "locally_signed": true,
+  "bundled_tor_browser_stable": false,
+  "public_end_user_distribution": false,
+  "review_candidate": true,
+  "signing_key_type": "local prototype key",
+  "signing_key_fingerprint": "PLACEHOLDER_LOCAL_PROTOTYPE_KEY_FINGERPRINT",
+  "artifacts": {
+    "gateway": "PLACEHOLDER_NOT_COMMITTED_TO_PUBLIC_REPO",
+    "workstation": "PLACEHOLDER_NOT_COMMITTED_TO_PUBLIC_REPO"
+  },
+  "artifact_sha512": {
+    "gateway": "PLACEHOLDER_SHA512",
+    "workstation": "PLACEHOLDER_SHA512"
+  },
+  "verification_commands": [
+    "gpg --verify Whonix-UTM-Apple-Silicon-...tar.SHA512SUM.asc Whonix-UTM-Apple-Silicon-...tar.SHA512SUM",
+    "shasum -a 512 -c Whonix-UTM-Apple-Silicon-...tar.SHA512SUM",
+    "./verify-bundle.sh Whonix-UTM-Apple-Silicon-...tar"
+  ],
+  "known_limitations": [
+    "Not a Whonix project artifact.",
+    "Not endorsed by Whonix.",
+    "Not for general users.",
+    "Tested on one local Apple Silicon UTM setup only.",
+    "Local prototype key only.",
+    "Fixed TCP port 8010 can conflict.",
+    "Dynamic resize live transition not fully measured.",
+    "Tor Browser stable GNU/Linux aarch64 is not bundled or claimed.",
+    "Systemcheck/leak-test evidence does not prove full security."
+  ],
+  "review_risks": "REVIEW_RISKS.md",
+  "ai_assisted": true,
+  "ai_assisted_note": "Some scripts and notes were drafted with AI assistance and then reviewed, tested, and verified locally before publication."
+}

@@ -1,0 +1,10 @@
+artifacts/
+*.utm
+*.utm.tar.gz
+*.qcow2
+*.img
+*.tar
+*.tar.gz
+*.log
+private-state/
+.DS_Store

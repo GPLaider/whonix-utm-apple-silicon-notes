@@ -1,0 +1,11 @@
+# Leak-test results example
+
+started_utc=2026-06-23T13:26:48Z
+finished_utc=2026-06-23T13:27:03Z
+scope=one local Workstation VM routed through one local Gateway VM
+command=runuser -u user -- env XDG_RUNTIME_DIR=/run/user/1000 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus WHONIX=1 systemcheck --cli --leak-tests --show-ip
+systemcheck_leak_tests_rc=0
+socksport_ip_leak_test=connected_to_tor
+system_default_networking_ip_leak_test=connected_to_tor
+stream_isolation_test=functional
+note=this example omits Tor exit IPs and private host details
