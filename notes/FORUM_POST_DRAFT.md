@@ -23,6 +23,6 @@ Important limits:
 - The dynamic-resolution helper is present and running, but I still want better live resize evidence.
 - Some AI-assisted scripts and notes were locally reviewed and tested before posting.
 
-The local prototype artifact is not published by default. I can share it if useful for review, but I do not want to create user-facing distribution confusion.
+The local prototype artifact is not published in this repository and is not requested for review in this forum post. I do not want to create user-facing distribution confusion.
 
 Please review the structure and notes, especially the verification-first flow and which parts should remain local-only.

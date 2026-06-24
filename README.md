@@ -1,6 +1,6 @@
 # Whonix UTM Apple Silicon notes
 
-Unofficial Apple Silicon UTM notes and local developers-only prototype artifact structure for Whonix testing. This is not a Whonix project artifact, not endorsed by Whonix, not for general users, and not a replacement for derivative-maker. It was tested on one Apple Silicon + UTM environment only. Some scripts and notes are AI-assisted and human-reviewed.
+Unofficial Apple Silicon UTM notes and local developers-only prototype artifact structure for Whonix testing. This public repository is notes-only. It is not a Whonix project artifact, not endorsed by Whonix, not for general users, and not a replacement for derivative-maker. It was tested on one Apple Silicon + UTM environment only. Some scripts and notes are AI-assisted and human-reviewed.
 
 ## What this is
 
@@ -12,7 +12,7 @@ This repository collects review material for Apple Silicon UTM prototype work ar
 - a split between possible upstream documentation improvements and local-only automation
 - example smoke/leak result summaries with private paths and large artifacts removed
 
-The local prototype artifact is not published by default. It can be shared for review if useful, but this repository should not create user-facing distribution confusion.
+No VM disk, UTM bundle, or tar archive is offered through this repository. The repository should be reviewable without importing a VM image or using a local prototype bundle.
 
 ## What this is not
 
@@ -49,7 +49,7 @@ These notes are examples for review, not a broad compatibility claim.
 
 ## Verification-first flow
 
-If a local prototype bundle is shared for review, verify before extraction or import:
+If a reviewer separately receives a local prototype bundle outside this repository, verify before extraction or import:
 
 ```sh
 gpg --verify Whonix-UTM-Apple-Silicon-...tar.SHA512SUM.asc \
@@ -62,9 +62,9 @@ shasum -a 512 -c Whonix-UTM-Apple-Silicon-...tar.SHA512SUM
 
 ## Local prototype artifact status
 
-The local prototype artifact is not published by default. It can be shared for review if useful, but this repository should not create user-facing distribution confusion.
+The local prototype artifact is not part of this public repository. This repository should not create user-facing distribution confusion or act as an artifact distribution point.
 
-When shared, it should be accompanied by hash, detached signature, metadata, limitations, and review-risk notes.
+If a local prototype bundle is ever discussed separately for review, it should be accompanied by hash, detached signature, metadata, limitations, and review-risk notes.
 
 ## Upstreamable vs local-only material
 

@@ -10,3 +10,4 @@
 - UTM, QEMU, macOS, and Whonix changes may break assumptions.
 - The local prototype artifact is not published by default.
 - This repository intentionally excludes VM disks, UTM bundles, local private logs, and private builder state.
+- The public repository is intended to be reviewed without importing VM images or using a local prototype bundle.
