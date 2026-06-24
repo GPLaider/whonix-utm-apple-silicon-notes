@@ -4,7 +4,8 @@
 - It was tested on one host and one UTM version only.
 - It uses a local prototype key only.
 - Fixed TCP port `8010` can create conflicts if multiple Gateway/Workstation pairs run at once.
-- Dynamic resize live transition was not fully measured.
+- Dynamic resolution is explicit opt-in and should not be presented as default-on behavior.
+- Dynamic resize live transition evidence is still limited.
 - Tor Browser stable GNU/Linux aarch64 is not bundled or claimed.
 - Systemcheck/leak-test evidence does not prove full security.
 - UTM, QEMU, macOS, and Whonix changes may break assumptions.

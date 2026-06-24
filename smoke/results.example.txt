@@ -10,5 +10,6 @@ systemcheck_virtualizer_gateway_rc=0
 systemcheck_virtualizer_workstation_rc=0
 tor_egress_smoke=IsTor true observed; exit IP omitted from public example
 dynamic_resolution_helper=present and running
+dynamic_resolution_policy=default-off, explicit opt-in only
 dynamic_resolution_live_transition=not fully measured
 note=this example is sanitized review material, not a compatibility guarantee

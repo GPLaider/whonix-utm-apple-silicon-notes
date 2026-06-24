@@ -20,7 +20,7 @@ Important limits:
 - It was tested on one UTM version and one Apple Silicon host.
 - Tor Browser for GNU/Linux aarch64 is not bundled; my local notes only record the observed upstream metadata status at test time.
 - The Gateway/Workstation pair currently uses fixed internal TCP port `8010`.
-- The dynamic-resolution helper is present and running, but I still want better live resize evidence.
+- Dynamic resolution is treated as explicit opt-in because Whonix Workstation disables automatic resizing by default to reduce resolution fingerprinting risk.
 - Some AI-assisted scripts and notes were locally reviewed and tested before posting.
 
 The local prototype artifact is not published in this repository and is not requested for review in this forum post. I do not want to create user-facing distribution confusion.

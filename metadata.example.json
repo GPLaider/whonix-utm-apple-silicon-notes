@@ -15,6 +15,8 @@
   "prototype": true,
   "locally_signed": true,
   "bundled_tor_browser_stable": false,
+  "dynamic_resolution_default_enabled": false,
+  "dynamic_resolution_explicit_opt_in": true,
   "public_end_user_distribution": false,
   "review_candidate": true,
   "signing_key_type": "local prototype key",
@@ -39,7 +41,8 @@
     "Tested on one local Apple Silicon UTM setup only.",
     "Local prototype key only.",
     "Fixed TCP port 8010 can conflict.",
-    "Dynamic resize live transition not fully measured.",
+    "Dynamic resolution is explicit opt-in and should not be presented as default-on behavior.",
+    "Dynamic resize live transition evidence is still limited.",
     "Tor Browser stable GNU/Linux aarch64 is not bundled or claimed.",
     "Systemcheck/leak-test evidence does not prove full security."
   ],

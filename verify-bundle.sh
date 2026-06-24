@@ -114,10 +114,15 @@ metadata = json.loads(pathlib.Path(sys.argv[1]).read_text(encoding="utf-8"))
 required_booleans = {
     "official_release": False,
     "supported_by_whonix": False,
+    "not_endorsed_by_whonix": True,
     "developers_only": True,
     "bundled_tor_browser_stable": False,
+    "dynamic_resolution_default_enabled": False,
+    "dynamic_resolution_explicit_opt_in": True,
     "prototype": True,
-    "publishable": True,
+    "locally_signed": True,
+    "public_end_user_distribution": False,
+    "review_candidate": True,
 }
 for key, expected in required_booleans.items():
     actual = metadata.get(key)

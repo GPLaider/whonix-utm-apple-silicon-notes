@@ -11,5 +11,6 @@
 - tar artifact not linked as user download
 - forum post does not request artifact sharing
 - repository can be reviewed without importing VM images
+- dynamic resolution default-off / explicit opt-in policy documented
 - `REVIEW_RISKS.md` present
 - `metadata.example.json` safety fields present

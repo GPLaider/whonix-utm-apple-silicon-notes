@@ -33,6 +33,7 @@ Local notes from one Apple Silicon + UTM setup recorded:
 - Workstation routes through `10.152.152.10`.
 - Workstation DNS points at `10.152.152.10` and `fd19:c33d:88bc::10`.
 - Smoke and Whonix systemcheck leak-test evidence was collected locally.
+- Dynamic resolution is treated as explicit opt-in because Whonix Workstation disables automatic resizing by default to reduce resolution fingerprinting risk.
 
 These notes are examples for review, not a broad compatibility claim.
 
@@ -42,7 +43,8 @@ These notes are examples for review, not a broad compatibility claim.
 - Tested on one host and one UTM version only.
 - Local prototype signing key only.
 - Fixed TCP port `8010` can conflict when multiple pairs run at once.
-- Dynamic resize live transition was not fully measured.
+- Dynamic resolution should not be presented as a default-on behavior; local testing may enable it explicitly with `configure-dynamic-resolution`.
+- Dynamic resize live transition evidence is still limited.
 - Tor Browser stable GNU/Linux aarch64 is not bundled or claimed.
 - Systemcheck/leak-test evidence does not prove full security.
 - UTM, QEMU, macOS, and Whonix changes may break assumptions.

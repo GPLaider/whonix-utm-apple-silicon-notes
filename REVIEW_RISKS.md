@@ -161,10 +161,10 @@ A cleaner per-pair socket or port allocation design is needed before broader tes
 ## 15. Is dynamic resolution fully proven?
 
 Concern:
-The Workstation resize helper may be present without proving live resize behavior across host window changes.
+The Workstation resize helper may be present without proving live resize behavior across host window changes. Automatic resizing can also expose unusual screen dimensions, so presenting it as default-on behavior would conflict with the Whonix Workstation privacy default.
 
 Mitigation:
-The smoke evidence records that the helper was installed and running, and the limitations say live resize transition evidence is still incomplete.
+The notes state that dynamic resolution is explicit opt-in. Metadata keeps `dynamic_resolution_default_enabled=false` and `dynamic_resolution_explicit_opt_in=true`. Local testing may enable it with `configure-dynamic-resolution`, but public notes should keep the privacy default clear.
 
 Remaining risk:
 Dynamic resolution needs a repeatable live resize test and privacy review before it is presented as more than local prototype behavior.
